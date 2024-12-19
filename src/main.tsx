@@ -7,10 +7,10 @@ import Test from "./assets/Test.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/github-io-test">
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/test" element={<Test />} />
+        <Route path="/testing" element={<Test />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
